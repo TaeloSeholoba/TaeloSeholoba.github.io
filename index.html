@@ -45,9 +45,17 @@
                 background-image: url("download\ \(1\).jpg");
                 background-size: 100% 150%;
             }
+            nav {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+            }
             .container {
                 font-size: 12 px;
                 width: 100%;
+            }
+            .cv {
+                grid-column: 1/3;
+                justify-self: left;
             }
         }
     </style>
@@ -55,10 +63,11 @@
 
 <body>
     <div class="container">
+
         <h1><u> Taelo Seholoba</u></h1>
-        <div><a href="#aboutMe" class="content">ABOUT ME</a><a href="#Skills" class="content">SKILLS</a><a href="#portfolio" class="content">PORTFOLIO</a><a href="#contacts" class="content">CONTACTS</a><a href="Taelo Seholoba (1)-pages-deleted.pdf" class="content"
-                target="_blank">VIEW MY CV</a></p>
-        </div>
+        <nav><a href="#aboutMe" class="content">ABOUT ME</a><a href="#Skills" class="content">SKILLS</a><a href="#portfolio" class="content">PORTFOLIO</a><a href="#contacts" class="content">CONTACTS</a><a href="Taelo Seholoba (1)-pages-deleted.pdf" class="content cv"
+                target="_blank">VIEW MY CV</a>
+        </nav>
         <div>
             <h2 id="aboutMe">About Me</h2>
             <p>
