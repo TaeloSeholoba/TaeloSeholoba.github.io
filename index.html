@@ -7,18 +7,21 @@
     <link href="https://fonts.google.com/specimen/Bebas+Neue" rel="stylesheet" type="text/css">
     <style>
         body {
-            /*background-image: url("media_1f78a60f54d4768f60186918e91c3a695f221f849.webp");
-            */
             background-image: linear-gradient(45deg, red, blue);
-            background-size: cover;
             background-attachment: scroll;
+            background-size: cover;
             font-family: "Bebas Neue", monospace;
+        }
+        
+        p {
+            font-size: 25px;
         }
         
         .container {
             display: grid;
             color: white;
             grid-template-rows: 2fr 1fr 5fr 1fr 1fr;
+            height: 150%;
             text-align: center;
         }
         
@@ -33,11 +36,6 @@
             box-shadow: 10px 10px 10px black;
         }
         
-        p,
-        a {
-            font-size: 25px;
-        }
-        
         @media only screen and (max-width: 600px) {
             .profile {
                 border-radius: 50%;
@@ -49,10 +47,6 @@
             nav {
                 display: grid;
                 grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-            }
-            p,
-            a {
-                font-size: 15px;
             }
             .container {
                 width: 100%;
