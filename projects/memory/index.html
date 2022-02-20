@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="src/memoryGame.js"></script>
+  </head>
+
+</head>
+
+<body onload="memoryGame.populatePictures()">
+    <h1>My Memory Game</h1>
+   <h2 id = "cardFlips"></h2>
+   <h2 id = "timer"></h2>
+   <div id = "showTime">time elapsed: 00:00:00</div>
+    <div id="myGrid">
+        <div onclick="memoryGame.selectPhoto('first')" id="block1"><img id="first"></div>
+        <div onclick="memoryGame.selectPhoto('second')" id="block2"><img id="second">
+        </div>
+        <div onclick="memoryGame.selectPhoto('third')" id="block3"><img id="third"></div>
+        <div onclick="memoryGame.selectPhoto('fourth')" id="block4"><img id="fourth">
+        </div>
+        <div onclick="memoryGame.selectPhoto('fifth')" id="block5"><img id="fifth">
+        </div>
+        <div onclick="memoryGame.selectPhoto('sixth')" id="block6"><img id="sixth">
+        </div>
+        <div onclick="memoryGame.selectPhoto('seventh')" id="block7"><img id="seventh">
+        </div>
+        <div onclick="memoryGame.selectPhoto('eighth')" id="block8"><img id="eighth"></div>
+        <div onclick="memoryGame.selectPhoto('ninth')" id="block9"><img id="ninth">
+        </div>
+        <div onclick="memoryGame.selectPhoto('tenth')" id="block10"><img id="tenth">
+        </div>
+        <div onclick="memoryGame.selectPhoto('eleventh')" id="block11"><img id="eleventh"></div>
+        <div onclick="memoryGame.selectPhoto('twelfth')" id="block12"><img id="twelfth"></div>
+    </div>
+    <div id="size">
+      <p>Configure Grid Size</p>
+      <button onclick="memoryGame.configureGridSize('default')">Default</button>
+      <button onclick="memoryGame.configureGridSize(memoryGame.twoByTwo)">
+        2x2
+      </button>
+      <button onclick="memoryGame.configureGridSize('2x3')">2x3</button>
+    </div>
+</body>
+</html>
+
+   
+ 

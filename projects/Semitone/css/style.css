@@ -1,0 +1,42 @@
+
+body{
+    background-color:rgb(42, 60, 77);
+    color:white;
+    text-align: center;
+}
+h1,.button,form{
+    text-align: center;
+    padding:5px;
+}
+#myAnswer,#submition{
+    display: none;
+}
+button,b{
+    background-color:deepskyblue;
+    height: 50px;
+    width: 300px;
+    border-radius: 25px;
+}
+input{
+    height: 50px;
+     width: 300px; 
+    border-radius: 25px;
+    text-align: center;
+    font-size: x-large;
+}
+p{
+    text-align: center;
+    font-size: x-large;
+    color:white;
+    text-align: center;
+}
+#explanation{
+    font-size: x-large;
+    padding: 10px;
+}
+#streak{
+    display:flex;
+    position: fixed;
+    bottom:100px;
+    right:100px;
+}

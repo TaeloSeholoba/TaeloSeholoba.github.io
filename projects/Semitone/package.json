@@ -1,0 +1,19 @@
+{
+  "name": "npm_demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine",
+    "start": "webpack --config webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "jasmine": "^3.8.0",
+    "jsdom": "^19.0.0",
+    "webpack": "^5.68.0",
+    "webpack-cli": "^4.9.2"
+  }
+}
