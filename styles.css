@@ -1,0 +1,72 @@
+body {
+    background-color:rgb(164, 236, 236);
+    color:rgb(44, 30, 30);
+  text-align: center;
+  font-variant: small-caps;
+  display: grid;
+  grid-template-areas:
+    "header"
+    "nav"
+    "div"
+    "hr"
+    "message";
+
+}
+header {
+  background: rgb(1, 149, 149);
+  color: white;
+  font-weight: bolder;
+  padding: 10px;
+  grid-area: header;
+}
+#location {
+  margin-top: 10px;
+  position: absolute;
+  left: 150px;
+}
+nav {
+  margin-top: 25px;
+  margin-right: 25px;
+  grid-area: nav;
+}
+span {
+  padding: 10px;
+}
+#aboutMe,
+#Skills,#Portfolio,#contacts,#cv{
+  position: relative;
+  display: none;
+  grid-area: div;
+}
+#aboutMeMessage,
+#skillMessage {
+  position: absolute;
+  grid-area: message;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+#aboutMe {
+  display: block;
+}
+
+
+#tech,#soft{
+    padding-right: 250px;
+    padding-top: 25px;
+    text-align: left;   
+}
+#projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+#aboutMeMessage{
+    display: block;
+}
+hr{
+    height:1px;
+    background-color:black;
+    border:none;
+}
+a{
+  color:rgb(1, 149, 149);
+}
