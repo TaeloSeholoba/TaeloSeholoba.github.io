@@ -1,0 +1,259 @@
+body,nav,.howItWorks,#menu{
+  display: grid;
+}
+header,#order button,#learn button,nav a:last-child,#menu button:first-child{
+  color: white;
+  background: rgb(8, 182, 226);
+}
+header,nav a:last-child,#p-2,.howItWorks h1,.howItWorks div,#browse,#menu{
+  text-align: center;
+}
+nav a:first-child,#trustPilot span ,nav + h1 span,#numOfItems,.food + p,#second,.howItWorks h1,#browse,#p-2 a{
+  color: rgb(8, 182, 226);
+}
+nav a:last-child,#apple-2{
+  height: 30px;
+}
+nav a:last-child,.food{
+  position: relative;
+}
+body {
+  grid-template-areas:
+    "header header header header"
+    "logo . nav nav"
+    "h1 h1 food food"
+    "p p food food"
+    "button button food food"
+    "trustPilot trustPilot food food"
+    "h1-1 h1-1 food-1 food-1"
+    "p-1 p-1 food-1 food-1"
+    "button-1 button-1 food-1 food-1"
+    "how how how how"
+    "browse browse browse browse"
+    "p-2 p-2 p-2 p-2"
+    "menu menu menu menu";
+  overflow-x: hidden;
+  font-family: "Akshar", sans-serif;
+
+}
+header { 
+  margin: -10px;
+  padding: 1em;
+  grid-area: header;
+}
+nav {
+  grid-area: nav;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin: 1em;
+  margin-top: 2em;
+
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:last-child {
+  width: 60px;
+  padding-top: 10px;
+  margin-top: -10px;
+  border-radius: 10px;
+}
+#logo {
+  grid-area: logo;
+  margin: 10px;
+}
+
+nav + h1 {
+  grid-area: h1;
+  font-size: 50px;
+}
+
+
+#numOfItems {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  font-size: 12px;
+}
+.food img {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 15px;
+  height: 500px;
+  width: 300px;
+}
+.food {
+  grid-area: food;
+}
+.food + p {
+  grid-area: p;
+  width: 700px;
+}
+#order {
+  grid-area: button;
+}
+#order button {
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  width: 150px;
+}
+#trustPilot {
+  grid-area: trustPilot;
+  line-height: 20px;
+  margin-top: 20px;
+}
+
+#trustPilot img {
+  margin-right: 10px;
+}
+#trustPilot,
+#order,
+p,
+h1,
+#logo,
+#learn button,
+.howItWorks {
+  margin-left: 100px;
+}
+#paypal {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  bottom: -25px;
+  left: 200px;
+}
+#google {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  bottom: 70px;
+  left: 180px;
+}
+#apple {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  bottom: 70px;
+  left: 370px;
+}
+#second {
+  margin-top: 200px;
+  font-size: 50px;
+  grid-area: h1-1;
+}
+.another {
+  grid-area: food-1;
+  position: relative;
+}
+
+.another img {
+  border-radius: 25px;
+  height: 500px;
+  width: 300px;
+  margin-top: 200px;
+}
+#heart {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  top: 100px;
+  left: -25px;
+}
+#fish {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 25%;
+  top: 200px;
+  left: 230px;
+}
+
+.another + p {
+  width: 700px;
+  color: rgb(16, 106, 129);
+}
+#learn button {
+  border: none;
+  border-radius: 15px;
+  height: 50px;
+  width: 150px;
+}
+#learn {
+  grid-area: button-1;
+}
+.howItWorks h1 {
+  margin-top: 200px;
+  grid-area:h1;
+}
+.howItWorks img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  grid-area:img;
+}
+.howItWorks {
+  width:1000px;
+  margin: 0px auto;
+  grid-area: how;
+  grid-template-areas:
+    "h1 h1 h1"
+    "img img img"
+    "p1 p2 p3";
+}
+
+#google-2{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 25%;
+  bottom: 70px;
+  left: 40px;
+}
+#apple-2{
+  position: absolute;
+  width: 30px;
+  border-radius: 25%;
+  bottom: 110px;
+  left: 240px;
+}
+#cont{
+  position: relative;
+}
+h3 +p{
+ width:320px;
+ margin-left:-10px;
+}
+#browse{
+  grid-area: browse;
+}
+#p-2{
+  grid-area:p-2;
+  color:rgb(16, 106, 129);
+}
+
+#menu{
+  grid-area:menu;
+  grid-template-columns: 1fr 1fr 1fr;
+  width:640px;
+  margin: 0px auto; 
+}
+#menu button{
+  border:1px solid rgb(16, 106, 129);
+  border-radius: 15px;
+  height: 40px;
+  width: 140px;
+}
