@@ -1,14 +1,14 @@
 body,nav,.howItWorks,#menu{
   display: grid;
 }
-header,#order button,#learn button,nav a:last-child,#menu button:first-child{
+header,nav a:last-child,button{
   color: white;
   background: rgb(8, 182, 226);
 }
 header,nav a:last-child,#p-2,.howItWorks h1,.howItWorks div,#browse,#menu{
   text-align: center;
 }
-nav a:first-child,#trustPilot span ,nav + h1 span,#numOfItems,.food + p,#second,.howItWorks h1,#browse,#p-2 a{
+nav a:first-child,#trustPilot span ,nav + h1 span,#numOfItems,.food + p,#second,.howItWorks h1,#browse,#p-2 a,.price{
   color: rgb(8, 182, 226);
 }
 nav a:last-child,#apple-2{
@@ -31,7 +31,8 @@ body {
     "how how how how"
     "browse browse browse browse"
     "p-2 p-2 p-2 p-2"
-    "menu menu menu menu";
+    "menu menu menu menu"
+    "main main main main";
   overflow-x: hidden;
   font-family: "Akshar", sans-serif;
 
@@ -101,7 +102,7 @@ nav + h1 {
 #order {
   grid-area: button;
 }
-#order button {
+#order button,button {
   border: none;
   border-radius: 15px;
   height: 50px;
@@ -256,4 +257,65 @@ h3 +p{
   border-radius: 15px;
   height: 40px;
   width: 140px;
+}
+.main{
+  grid-area:main;
+  margin:20px;
+  display:grid;
+  grid-gap:20px;
+  grid-template-columns: 1fr 1fr;
+  
+}
+
+.main img{
+  width:160px;
+  margin:10px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border-radius:20px;
+}
+
+.first{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows:40px 40px 40px;
+  border: 1px solid rgb(226, 226, 226);
+  width:550px;
+  height:160px;
+}
+.first:nth-child(2n-1){
+  margin-left:200px;
+}
+.first:hover{
+  border-color:rgb(8, 182, 226);;
+}
+.message{
+  margin-top:20px;
+  grid-column:2/4
+}
+.num{
+  grid-column: 2;
+  grid-row:4;
+  border:1px solid rgb(206, 206, 206);
+  text-align:center;
+  width:30px;
+  height:20px;
+  border-radius:5px;
+}
+#btn{
+  grid-row: 4;
+  grid-column:2;
+  margin-left:40px;
+  width:100px;
+  height:25px;
+  border-radius:10px;
+  border:1px solid rgb(105, 105, 105);
+}
+.first > h2{
+  width:240px;
+}
+.fullMenu{
+  grid-column:1/3;
+  text-align: center;
+  border:none;
 }
