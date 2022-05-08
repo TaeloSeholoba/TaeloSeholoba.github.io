@@ -89,6 +89,9 @@ a{
 #contacts a{
   color: rgb(0, 99, 110);
 }
+.arrowImg{
+  display:none;
+}
 @media (max-width: 700px) {
   #about{
     display:block;
@@ -165,4 +168,7 @@ a{
     box-shadow:0px 0px 20px;
     border-radius: 0%;
   }
+.arrowImg {
+  display:block;
+}
 }
