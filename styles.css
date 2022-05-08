@@ -141,6 +141,7 @@ a{
   #skills img,#portfolio img{
     margin-left:0px;
     margin-right:20px;
+    text-align:left;
   }
  .arrow,.arrowImg{
     display:block;
