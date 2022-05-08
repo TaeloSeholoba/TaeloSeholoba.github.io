@@ -1,82 +1,164 @@
 body {
-  background-color: rgb(164, 236, 236);
-  color: rgb(44, 30, 30);
-  text-align: center;
+  overflow-x: hidden;
   font-variant: small-caps;
-  display: grid;
-  grid-template-areas:
-    "header"
-    "nav"
-    "div"
-    "hr"
-    "message";
-    overflow-x: hidden;
 }
 header {
-  background: rgb(1, 149, 149);
-  color: white;
-  font-weight: bolder;
-  padding: 10px;
-  grid-area: header;
+  position:fixed;
+  top:0px;
+  padding: 20px;
+  background: rgb(0, 226, 251);
+  margin: -10px;
+  display: flex;
+  justify-content: space-between;
+  width:100%;
 }
-#location {
-  margin-top: 10px;
-  position: absolute;
-  left: 150px;
+nav{
+  margin-right:40px;
+  margin-top:20px;
 }
-nav {
-  margin-top: 25px;
-  margin-right: 25px;
-  grid-area: nav;
+#about{
+  margin-top:160px;
+  display:grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 0.1fr 1fr;
+  text-align:left !important;
+  grid-gap:10px;
 }
-span {
-  padding: 10px;
-}
-#aboutMe,
-#Skills,
-#Portfolio,
-#contacts,
-#cv {
-  position: relative;
-  display: none;
-  grid-area: div;
-}
-#aboutMeMessage,
-#skillMessage {
-  position: absolute;
-  grid-area: message;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-#aboutMe {
-  display: block;
-}
-
-#tech,
-#soft {
-  padding-right: 250px;
-  padding-top: 25px;
-  text-align: left;
-}
-#projects {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-#aboutMeMessage {
-  display: block;
-}
-hr {
-  height: 1px;
-  background-color: black;
-  border: none;
-}
-a {
-  color: rgb(1, 149, 149);
-}
-#food{
+.profilePic {
+  display:block;
   border-radius: 50%;
+  width:160px;
+  height:160px;
+  margin-left:140px;
+  grid-row:1/3;
+}
+img {
+  width: 10%;
+  display:block;
+}
+.logo{
+  display:block;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 500px;
 }
 
-@media screen {
+.menu,.arrow{
+  display:none;
+  cursor:pointer;
+}
+section{
+  margin-bottom:50px;
+}
+
+a{
+ color:black;
+ text-decoration: none;
+}
+
+#skills,#portfolio{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap:20px;
+  text-align:center;
+  margin-bottom:60px;
+}
+#skills h1{
+  grid-column:1/4;
+  margin-bottom:40px;
+}
+
+#portfolio,#contacts{
+  line-height: 40px;
+}
+#portfolio h1{
+  grid-column:1/4;
+}
+#portfolio img,#skills img{
+  width:40%;
+  margin-left:100px;
+}
+#contacts{
+  text-align:center;
+}
+#contacts a{
+  color: rgb(0, 99, 110);
+}
+@media (max-width: 700px) {
+  #about{
+    display:block;
+  }
+  .menu{
+    display:block;
+    margin-right: 50px;
+  }
+  main{
+    margin-left:40px;
+  }
   
+  img{
+    display:block;
+  }
+  nav {
+    position: absolute;
+    right: 0px;
+    width: 0px;
+    top: 130px;
+    display: flex;
+    flex-direction: column;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
+  ul {
+    flex-direction: column;
+    height: 160px;
+    align-content: space-between;
+    margin-top:22px;
+  }
+  li {
+    border: 1px solid rgb(203, 201, 201);
+    padding: 20px;
+    background-color: white;
+  }
+  .img {
+    position: absolute;
+    top: -130px;
+    border: 1px solid rgb(203, 201, 201);
+    left: 40px;
+    padding: 23px;
+    background: white;
+    border-right:none;
+    cursor: pointer;
+  }
+  #skills img,#portfolio img{
+    margin-left:0px;
+  }
+  @keyframes hide{
+    0%{
+      width: 300px;
+    }
+    100%{
+      width:0px;
+    }
+  }
+  @keyframes show{
+    0%{
+      width:0px;
+    }
+    100%{
+      width: 300px;
+    }
+  }
+  .profilePic{
+    width:90%;
+    margin:100px auto;
+    margin-bottom:10px;
+    box-shadow:0px 0px 20px;
+    border-radius: 0%;
+  }
 }
