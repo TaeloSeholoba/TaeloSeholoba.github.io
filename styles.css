@@ -118,7 +118,7 @@ a{
     flex-direction: column;
     height: 160px;
     align-content: space-between;
-    margin-top:22px;
+    margin-top:-4px;
   }
   li {
     border: 1px solid rgb(203, 201, 201);
@@ -127,16 +127,20 @@ a{
   }
   .img {
     position: absolute;
-    top: -130px;
+    top: -140px;
     border: 1px solid rgb(203, 201, 201);
     left: 40px;
-    padding: 23px;
+    padding: 13px;
     background: white;
     border-right:none;
     cursor: pointer;
   }
   #skills img,#portfolio img{
     margin-left:0px;
+    margin-right:20px;
+  }
+ .arrow{
+    display:block;
   }
   @keyframes hide{
     0%{
