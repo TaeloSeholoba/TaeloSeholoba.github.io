@@ -1,43 +1,51 @@
+html{
+  scroll-behavior: smooth;
+}
 body {
   overflow-x: hidden;
-  font-variant: small-caps;
+  font-family:monospace;
+  padding-top:100px;
 }
 header {
-  position:fixed;
-  top:0px;
+  position: fixed;
+  top: 0px;
   padding: 20px;
-  background: rgb(0, 226, 251);
+  background: rgba(0, 226, 251, 0.7);
   margin: -10px;
   display: flex;
   justify-content: space-between;
-  width:100%;
+  width: 100%;
+  height:50px;
 }
-nav{
-  margin-right:40px;
-  margin-top:20px;
+nav {
+  margin-right: 40px;
+  margin-top: 10px;
 }
-#about{
-  margin-top:160px;
-  display:grid;
+#about {
+  margin-top: 50px;
+  display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 0.1fr 1fr;
+  text-align: left;
+  grid-gap: 10px;
+}
+#about div{
   text-align:left !important;
-  grid-gap:10px;
 }
 .profilePic {
-  display:block;
+  display: block;
   border-radius: 50%;
-  width:160px;
-  height:160px;
-  margin-left:140px;
-  grid-row:1/3;
+  width: 160px;
+  height: 160px;
+  margin-left: 140px;
+  grid-row: 1/3;
 }
 img {
   width: 10%;
-  display:block;
+  display: block;
 }
-.logo{
-  display:block;
+.logo {
+  display: block;
 }
 ul {
   list-style: none;
@@ -47,128 +55,184 @@ ul {
   width: 500px;
 }
 
-.menu,.arrow{
-  display:none;
-  cursor:pointer;
+.menu,
+.arrow {
+  display: none;
+  cursor: pointer;
 }
-section{
-  margin-bottom:50px;
-}
-
-a{
- color:black;
- text-decoration: none;
+section {
+  margin-bottom: 50px;
 }
 
-#skills,#portfolio{
-  display:grid;
+a {
+  color: black;
+  text-decoration: none;
+}
+
+#skills{
+text-align: center;
+margin-bottom: 60px;
+line-height: 60px;;
+}
+#skills div{
+  background:rgba(204, 245, 251, 0.7);
+  margin:0px -50px;
+  padding:50px;
+}
+#skills div,
+#portfolio {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 80px;
-  grid-row-gap:20px;
-  text-align:center;
-  margin-bottom:60px;
+  grid-row-gap: 20px;
+  text-align: center;
 }
-#skills h1{
-  grid-column:1/4;
-  margin-bottom:40px;
+#skills u ,#portfolio u{
+  grid-column: 1/4;
+  margin-bottom: 40px;
 }
-
-#portfolio,#contacts{
+#skills section{
+  background:black;
+}
+#portfolio,
+#contacts {
   line-height: 40px;
 }
-#portfolio h1{
-  grid-column:1/4;
+ 
+#portfolio img,
+#skills img {
+  width: 40%;
+  margin-left: 100px;
 }
-#portfolio img,#skills img{
-  width:40%;
-  margin-left:100px;
+#portfolio div a{
+  text-align: left;
+  border:1px solid rgb(0, 99, 110);
+  padding:20px;
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows: 40px 40px;
+  height: 200px;
 }
-#contacts{
-  text-align:center;
+#portfolio div:hover{
+  box-shadow:0px 0px 40px;
 }
-#contacts a{
+#protfolio div:first-child{
+  grid: row 1px / 2px;
+  border-radius:10px;
+  background:red;
+}
+#contacts, #about div  {
+  text-align: center;
+  border:1px solid rgb(0, 99, 110);
+  padding:20px;
+  box-shadow:0px 0px 10px;
+}
+#contacts a {
   color: rgb(0, 99, 110);
 }
-.arrowImg{
-  display:none;
+.arrowImg {
+  display: none;
 }
+u{
+  color:rgb(0, 226, 251);
+}
+h1{
+  color:black;
+}
+
 @media (max-width: 700px) {
-  #about{
-    display:block;
+ 
+  header{
+    height:40px;
   }
-  .menu{
-    display:block;
+  #about {
+    display: block;
+    width:100%;
+    margin-top:-100px;
+    
+  }
+  .menu {
+    display: block;
     margin-right: 50px;
   }
-  main{
-    margin-left:40px;
+  main {
+    margin-left: 40px;
   }
-  
-  img{
-    display:block;
+
+  img {
+    display: block;
   }
   nav {
     position: absolute;
     right: 0px;
     width: 0px;
-    top: 130px;
+    top: -10px;
     display: flex;
     flex-direction: column;
     animation-duration: 1s;
     animation-fill-mode: forwards;
+    display:none;
   }
   ul {
     flex-direction: column;
-    height: 160px;
+    background: rgba(0, 226, 251, 0.7);
     align-content: space-between;
-    margin-top:-4px;
+    margin-top: -4px;
+    padding-left: 0px;
+    height: 1000px;
+    justify-content: flex-start;
   }
   li {
-    border: 1px solid rgb(203, 201, 201);
+    border-bottom: 1px solid rgb(9, 184, 203);
     padding: 20px;
-    background-color: white;
+    font-weight: 900;
   }
-  .img {
-    position: absolute;
-    top: -140px;
-    border: 1px solid rgb(203, 201, 201);
-    left: 40px;
-    padding: 13px;
-    background: white;
-    border-right:none;
-    cursor: pointer;
+  li img {
+    width:20px;
   }
-  #skills img,#portfolio img{
+  #skills,#portfolio,#contacts{
+    text-align: left;
+  }
+  #portfolio{
+    grid-template-columns: 1fr ;
+  }
+  #portfolio u{
+    grid-column:1/2;
+  }
+  #skills img,
+  #portfolio img {
     width: 80%;
-    margin-left:0px;
-    margin-right:20px;
-    text-align:left;
+    margin-left: 0px;
+    margin-right: 20px;
+    text-align: left;
   }
- .arrow,.arrowImg{
-    display:block;
+  .arrow,
+  .arrowImg {
+    display: block;
   }
-  @keyframes hide{
-    0%{
+  @keyframes hide {
+    0% {
       width: 300px;
     }
-    100%{
-      width:0px;
+    99.9%{
+      width: 0px;
+    }
+    100% {
+      visibility:hidden;
     }
   }
-  @keyframes show{
-    0%{
-      width:0px;
+  @keyframes show {
+    0% {
+      width: 0px;
     }
-    100%{
+    100% {
       width: 300px;
     }
   }
-  .profilePic{
-    width:90%;
-    margin:100px auto;
-    margin-bottom:10px;
-    box-shadow:0px 0px 20px;
+  .profilePic {
+    width: 90%;
+    margin: 100px auto;
+    margin-bottom: 10px;
     border-radius: 0%;
   }
-
 }

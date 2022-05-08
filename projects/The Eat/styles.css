@@ -301,7 +301,6 @@ h3 + p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 40px 40px 40px;
   border: 1px solid rgb(226, 226, 226);
-  width: 550px;
   height: 160px;
 }
 .first:nth-child(2n-1) {
