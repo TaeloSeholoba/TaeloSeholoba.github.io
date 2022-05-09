@@ -197,11 +197,14 @@ h1{
     padding-left: 0px;
     height: 1000px;
     justify-content: flex-start;
+
   }
   li {
     border-bottom: 1px solid rgb(9, 184, 203);
     padding: 20px;
     font-weight: 900;
+    background:rgba(9, 184, 203,0.5);
+    color:black;
   }
   li img {
     width:20px;
