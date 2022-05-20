@@ -14,7 +14,7 @@ header {
   top: 0px;
   padding: 20px;
   background: rgba(0, 226, 251, 0.2);
-  margin: -10px;
+  margin: 0px;
   display: flex;
   justify-content: space-between;
   width: 100%;
